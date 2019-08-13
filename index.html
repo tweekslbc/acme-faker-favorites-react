@@ -14,7 +14,13 @@
     <script>
     const root = document.querySelector('#root');
     ReactDOM.render (React.createElement('hr', {className: 'red' }), root);
-    console.log(faker);
+    //console.log(faker);
+
+    const arrUsers = [];
+    for (let i = 0; i < 10; i++){
+    arrUsers.push(faker.helpers.userCard());}
+
+    console.log(arrUsers);
 
     //need name and user id from faker
 
