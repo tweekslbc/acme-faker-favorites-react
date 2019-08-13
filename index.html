@@ -20,10 +20,10 @@
     for (let i = 0; i < 10; i++){
     arrUsers.push(faker.helpers.userCard());}
 
-    const lis = arrUsers.map (user => React.createElement("li", null, user.name));
-    React.createElement( "ul", null ,lis );
-
-    console.log(arrUsers);
+    const lis = arrUsers.map (user => React.createElement("li", null, user.name , user.username ));
+    const app = React.createElement( "ul", null ,lis );
+    ReactDOM.render(app, root);
+    //console.log(arrUsers);
 
     </script>
   </body>
